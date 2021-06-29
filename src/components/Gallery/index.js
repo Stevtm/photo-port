@@ -1,5 +1,5 @@
 import React from "react";
-import PhotoList from "./PhotoList";
+import PhotoList from "../PhotoList";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 const Gallery = ({ currentCategory }) => {
@@ -9,7 +9,7 @@ const Gallery = ({ currentCategory }) => {
 		<section>
 			<h1 data-testid="h1tag">{capitalizeFirstLetter(name)}</h1>
 			<p>{description}</p>
-			<PhotoList category={currentCategory.name}></PhotoList>
+			<PhotoList category={name}></PhotoList>
 		</section>
 	);
 };
