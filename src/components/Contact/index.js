@@ -48,7 +48,7 @@ const ContactForm = () => {
 						type="text"
 						name="name"
 						defaultValue={name}
-						onChange={handleChange}
+						onBlur={handleChange}
 					></input>
 				</div>
 				<div>
@@ -57,7 +57,7 @@ const ContactForm = () => {
 						type="email"
 						name="email"
 						defaultValue={email}
-						onChange={handleChange}
+						onBlur={handleChange}
 					></input>
 				</div>
 				<div>
@@ -66,9 +66,14 @@ const ContactForm = () => {
 						name="message"
 						rows="5"
 						defaultValue={message}
-						onChange={handleChange}
+						onBlur={handleChange}
 					></input>
 				</div>
+				{errorMessage && (
+					<div>
+						<p className="error-text">{errorMessage}</p>
+					</div>
+				)}
 				<button type="submit">Submit</button>
 			</form>
 		</section>
