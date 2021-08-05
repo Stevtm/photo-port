@@ -2,7 +2,7 @@
 
 This is a web application built using React that showcases a photographer's portfolio of photos and provides a contact form for visitors to contact them.
 
-The application is deployed here: https://stevtm.github.io/photo-port/#about
+The application is deployed here: https://stevtm.github.io/photo-port/
 
 ## Screenshot
 
